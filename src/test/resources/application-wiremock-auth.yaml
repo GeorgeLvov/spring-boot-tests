@@ -1,0 +1,12 @@
+wiremock:
+  server:
+    baseUrl: http://localhost:${wiremock.server.port}
+    port: 0
+
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: ${wiremock.server.baseUrl}/auth/realms/default
+          jwk-set-uri: ${wiremock.server.baseUrl}/auth/realms/default/protocol/openid-connect/certs

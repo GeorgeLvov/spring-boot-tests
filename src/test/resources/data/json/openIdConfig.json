@@ -1,0 +1,12 @@
+{
+  "issuer": "${issuer-uri}",
+  "authorization_endpoint": "${issuer-uri}/protocol/openid-connect/auth",
+  "token_endpoint": "${issuer-uri}/protocol/openid-connect/token",
+  "token_introspection_endpoint": "${issuer-uri}/protocol/openid-connect/token/introspect",
+  "userinfo_endpoint": "${issuer-uri}/protocol/openid-connect/userinfo",
+  "end_session_endpoint": "${issuer-uri}/protocol/openid-connect/logout",
+  "jwks_uri": "${issuer-uri}/protocol/openid-connect/certs",
+  "check_session_iframe": "${issuer-uri}/protocol/openid-connect/login-status-iframe.html",
+  "registration_endpoint": "${issuer-uri}/clients-registrations/openid-connect",
+  "introspection_endpoint": "${issuer-uri}/protocol/openid-connect/token/introspect"
+}

@@ -1,0 +1,6 @@
+{
+  "timestamp": "${json-unit.any-string}",
+  "status": 404,
+  "reasonPhrase": "Not Found",
+  "errorMessage": "No order found with id=1"
+}

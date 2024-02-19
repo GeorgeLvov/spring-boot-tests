@@ -1,0 +1,7 @@
+logging:
+  level:
+    root: INFO
+    com.example: DEBUG
+    org.springframework.security: INFO
+    org.springframework.retry: INFO
+    org.testcontainers: INFO
