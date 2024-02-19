@@ -1,0 +1,8 @@
+{
+  "access_token": "eyJraWQiOiJrMSIsImFsZyI6IlJTMjU2IiwidHlwIjoiSldUIn0.eyJqdGkiOiIyZWFiZjhiZC1kYzA2LTRlNDktYjJjNS03ZTk0YTVmM2U1NGQiLCJleHAiOjE3MDgwODY2ODMsImlhdCI6MTcwODA4NjA4MywiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo4MDgwL2F1dGgvcmVhbG1zL2RlZmF1bHQiLCJ0eXAiOiJCZWFyZXIiLCJjbGllbnRJZCI6Iml0X3Rlc3RfZGVtbyIsInN1YiI6InVzZXJfbmFtZV8yIn0.70FwdE63GPWYtbi9Ci6BTgXtFK4TPl7f7_Z7BkEuvxkdO-oJHavxP0N6jelctWtT-XLX7bre1kQWZHnSgSHhTpeWk2RICxbu3H1nemZ_56I3XEx-a3UFOuzZXHsPeXcYDyaQtvPEV0rhx2QOqNlyDX9z34kSy5Fuh9zxoQxN_CT5k3G08V9qIgxMRMxAsYHeIKpwr9MYbebOIp_P-1Ghye0FY2x3K4t1c1asbitZk5GE6SMph156JnVarLSzGjVPFHvPtPEbBRIkVi2pPUJgzs42Fhq0VGFchl7KbJb8jo8-QVNOlP8PlA4S3hyGjVGXcYiZ7YpoM5QzJMVdK5crYQ",
+  "expires_in": 300,
+  "refresh_expires_in": 0,
+  "token_type": "Bearer",
+  "not-before-policy": 0,
+  "scope": "email client-origin profile"
+}

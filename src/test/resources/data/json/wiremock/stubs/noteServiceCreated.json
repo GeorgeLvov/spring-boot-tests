@@ -1,0 +1,9 @@
+{
+  "request": {
+    "urlPath": "/notes",
+    "method": "POST"
+  },
+  "response": {
+    "status": 201
+  }
+}

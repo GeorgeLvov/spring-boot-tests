@@ -1,0 +1,38 @@
+[
+  {
+    "scenarioName": "Post Wmstk-Notification Scenario",
+    "requiredScenarioState": "Started",
+    "newScenarioState": "First Attempt",
+    "request": {
+      "urlPath": "/notification",
+      "method": "POST"
+    },
+    "response": {
+      "status": 412
+    }
+  },
+  {
+    "scenarioName": "Post Wmstk-Notification Scenario",
+    "requiredScenarioState": "First Attempt",
+    "newScenarioState": "Second Attempt",
+    "request": {
+      "urlPath": "/notification",
+      "method": "POST"
+    },
+    "response": {
+      "status": 412
+    }
+  },
+  {
+    "scenarioName": "Post Wmstk-Notification Scenario",
+    "requiredScenarioState": "Second Attempt",
+    "newScenarioState": "Third Attempt",
+    "request": {
+      "urlPath": "/notification",
+      "method": "POST"
+    },
+    "response": {
+      "status": 200
+    }
+  }
+]

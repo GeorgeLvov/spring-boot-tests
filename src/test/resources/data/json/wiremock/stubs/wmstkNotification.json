@@ -1,0 +1,9 @@
+{
+  "request": {
+    "urlPath": "/notification",
+    "method": "POST"
+  },
+  "response": {
+    "status": 202
+  }
+}

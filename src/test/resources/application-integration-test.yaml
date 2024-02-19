@@ -1,0 +1,43 @@
+queue:
+  name: DEV.QUEUE.1
+  manager: QM1
+  channel: DEV.APP.SVRCONN
+  ssl:
+    cipher_suite: ""
+
+wiremock:
+  reset-mappings-after-each-test: true
+  server:
+    files: classpath:/data/json/wiremock
+    port: 0
+    base-url: http://localhost:${wiremock.server.port}
+
+spring:
+#  mvc:
+#    servlet:
+#      path: /custom
+  jpa:
+    hibernate:
+      ddl-auto: create
+  security:
+    oauth2:
+      client:
+        registration:
+          tardis:
+            authorization-grant-type: client_credentials
+            client-id: dummy_client_id
+            client-secret: dummy_client_secret
+        provider:
+          tardis:
+            token-uri: ${wiremock.server.base-url}/auth/realms/default/protocol/openid-connect/token
+      resourceserver:
+        jwt:
+          issuer-uri: ${wiremock.server.base-url}/auth/realms/default
+          jwk-set-uri: ${wiremock.server.base-url}/auth/realms/default/protocol/openid-connect/certs
+
+retry:
+  max-attempts: 3
+
+url:
+  wmstk-service: ${wiremock.server.base-url}/notification
+  note-service: ${wiremock.server.base-url}/notes
