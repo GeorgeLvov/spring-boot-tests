@@ -1,0 +1,39 @@
+queue:
+  name: ${QUEUE_NAME}
+  manager: ${QUEUE_MANAGER}
+  host: ${QUEUE_HOST}
+  channel: ${QUEUE_CHANNEL}
+  port: ${QUEUE_PORT}
+  ssl:
+    cipher_suite: ${QUEUE_SSL_CIPHER_SUITE}
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: ${DB_URL}
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+  jpa:
+    hibernate:
+      ddl-auto: none
+  security:
+    oauth2:
+      client:
+        registration:
+          tardis:
+            authorization-grant-type: client_credentials
+            client-id: ${CLIENT_ID}
+            client-secret: ${CLIENT_SECRET}
+        provider:
+          tardis:
+            token-uri: ${TOKEN_URI}
+      resourceserver:
+        jwt:
+          issuer-uri: ${ISSUER_URI}
+          jwk-set-uri: ${JWK_SET_URI}
+retry:
+  max-attempts: ${RETRY_MAX_ATTEMPTS}
+
+url:
+  wmstk-service: ${WMSTK_URL}
+  note-service: ${NOTE_SERVICE}
