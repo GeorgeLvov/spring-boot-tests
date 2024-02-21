@@ -37,7 +37,8 @@ import static org.mockito.Mockito.when;
  * Note: This test does not use {@link SpringBootTest}, so some functionality, such as reading values
  * from application.properties is not available during the test.
  * If they are required, they can be set with {@link ReflectionTestUtils} or
- * {@code @ExtendWith(SpringExtension.class)} can be replaced with {@code @SpringBootTest}
+ * {@code @ExtendWith(SpringExtension.class)} and @ContextConfiguration(classes = ...)
+ * can be replaced with {@code @SpringBootTest(classes = ...)}
  *
  * @author Georgii Lvov
  */
